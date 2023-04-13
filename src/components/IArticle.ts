@@ -1,6 +1,6 @@
 
 export interface IArticle {
-    id: number;
+    id: string;
     title: string;
     summary: string;
     image_url: string

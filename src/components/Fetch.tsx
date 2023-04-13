@@ -12,8 +12,8 @@ const Fetch = () => {
     try {
       const r = await fetch(URL);
       if (r.ok) {
-        const  articleApi= await r.json();
-        setArticles(articleApi);
+        const  articleApi = await r.json();
+        setArticles(articleApi.results);
       }
     } catch (error) {
       console.log(error);
