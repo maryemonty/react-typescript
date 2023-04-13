@@ -27,9 +27,9 @@ useEffect(() => {
   return (
     <Container>
       <Row md={3} className="justify-content-center">
-        {articles.map(a => (
-          <Col key={a.id}>
-            <Article art={a} />
+        {articles.map(art => (
+          <Col key={art.id}>
+            <Article art={art} />
           </Col>
         ))}
       </Row>
